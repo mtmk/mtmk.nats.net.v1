@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mtmk.nats.client", "mtmk.nats.client\mtmk.nats.client.csproj", "{8CCAADA2-1DCD-47FA-A83E-C4E8194B69DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".", ".", "{B2E93A8C-367D-4772-B8CC-D3EE752AC5A7}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		dummy.png = dummy.png
+		README.md = README.md
+		version.txt = version.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{432613EC-B1F6-4B02-AD6D-6CEBCF7FBC93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{521288E5-26F3-4475-A083-1E1CBF8B1303}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\publish.yml = .github\workflows\publish.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CCAADA2-1DCD-47FA-A83E-C4E8194B69DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CCAADA2-1DCD-47FA-A83E-C4E8194B69DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CCAADA2-1DCD-47FA-A83E-C4E8194B69DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CCAADA2-1DCD-47FA-A83E-C4E8194B69DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{432613EC-B1F6-4B02-AD6D-6CEBCF7FBC93} = {B2E93A8C-367D-4772-B8CC-D3EE752AC5A7}
+		{521288E5-26F3-4475-A083-1E1CBF8B1303} = {432613EC-B1F6-4B02-AD6D-6CEBCF7FBC93}
+	EndGlobalSection
+EndGlobal

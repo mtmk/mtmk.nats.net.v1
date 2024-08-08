@@ -1,0 +1,23 @@
+<Project>
+    <PropertyGroup>
+        <Version>$([System.IO.File]::ReadAllText("$(MSBuildThisFileDirectory)version.txt"))</Version>
+        <PackageVersion>$(Version)</PackageVersion>
+        <Authors>mtmk</Authors>
+        <Description>Dummy package to test NuGet publishing.</Description>
+        <Copyright>Copyright (c) mtmk 2024</Copyright>
+        <PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/mtmk/mtmk.dummy</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/mtmk/mtmk.dummy</RepositoryUrl>
+        <PackageIcon>dummy.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageTags>dummy</PackageTags>
+        <PackageReleaseNotes>This is a dummy release.</PackageReleaseNotes>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)sign.snk</AssemblyOriginatorKeyFile>
+    </PropertyGroup>
+    <PropertyGroup>
+        <Deterministic>true</Deterministic>
+    </PropertyGroup>
+
+
+</Project>
