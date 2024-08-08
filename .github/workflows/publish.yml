@@ -47,8 +47,7 @@ jobs:
       - if: ${{ fromJSON(steps.tag.outputs.create) }}
         name: nuget publish
         run: |
-          echo nuget push
-          # dotnet nuget push dist/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
+          dotnet nuget push dist/*.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}
 
       - if: ${{ fromJSON(steps.tag.outputs.create) }}
         name: Tag
